@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Pago</title>
+  <style>
+    #contenedor {
+      width: 980px;
+      margin: 0 auto;
+    }
+    .caja {
+      border: 2px solid black;
+      background-color: cadetblue;
+      padding: 2rem;
+    }
+    .columna {
+      display: inline-block;
+      padding: 2rem;
+    }
+    #menu {
+      width: 200px;
+      background-color: burlywood;
+    }
+    #main {
+      background-color: cyan;
+      width: 312px;
+    }
+    #publicidad {
+      width: 200px;
+      background-color: goldenrod;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="contenedor">
+    <div class="caja">
+      Barra de navegación
+    </div>
+    <div class="caja">
+      <div class="columna" id="menu">
+        Columna MENU
+      </div>
+      <div class="columna" id="main">
+        <h3>Ingrese sus datos para pagar</h3>
+        <form method="GET">
+          <p>
+            <label>Nombre:</label>
+            <input type="text" placeholder="Ingrese su nombre">
+          </p>
+          <p>
+            <label>Contraseña:</label>
+            <input type="password" placeholder="Ingrese su contraseña">
+          </p>
+          <p>
+            <label>Correo:</label>
+            <input type="email" placeholder="Ingrese su Correo electrónico">
+          </p>
+          <p>
+            <label>Edad:</label>
+            <input type="number" placeholder="Ingrese su edad">
+          </p>
+          <p>
+            <input type="submit">
+          </p>
+        </form>
+      </div>
+      <div class="columna" id="publicidad">
+        Columna Publicidad
+      </div>
+    </div>
+  </div>
+</body>
+</html>
