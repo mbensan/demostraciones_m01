@@ -18,6 +18,7 @@
     .columna {
       display: inline-block;
       padding: 2rem;
+      vertical-align: top;
     }
     #menu {
       width: 200px;
@@ -26,6 +27,7 @@
     #main {
       background-color: cyan;
       width: 312px;
+      background: linear-gradient(90deg, rgba(71,195,250,1) 0%, rgba(251,192,192,1) 50%, rgba(252,176,69,1) 100%);
     }
     #publicidad {
       width: 200px;
@@ -35,6 +37,7 @@
   </style>
 </head>
 <body>
+  <!-- .T_ZXJj@bDs8#4# -->
   <div id="contenedor">
     <div class="caja">
       Barra de navegación
@@ -61,6 +64,50 @@
           <p>
             <label>Edad:</label>
             <input type="number" placeholder="Ingrese su edad">
+          </p>
+          <p>
+            <label>Método de pago</label>
+            <select name="metodo_pago">
+              <option value="webpay">Webpay</option>
+              <option value="paypal">Pay Pal</option>
+              <option value="bitcoin">Bitcoin</option>
+              <option value="trueque">Trueque</option>
+            </select>
+          </p>
+          <p>
+            <label>Identificación</label>
+          </p>
+          <p>
+            <label>Cédula de Identidad</label>
+            <input type="radio" name="tipo_identificacion" value="cedula">
+            <label>Pasaporte</label>
+            <input type="radio" name="tipo_identificacion" value="pasaporte">
+          </p>
+          <p>
+            <label>Grupo Sanguineo</label>
+          </p>
+          <p>
+            <label>A2+</label>
+            <input type="radio" name="tipo_sangre" value="a2+">
+            <label>O+</label>
+            <input type="radio" name="tipo_sangre" value="o+">
+            <label>O-</label>
+            <input type="radio" name="tipo_sangre" value="o-">
+          </p>
+          <p>
+            <label>Servicios a Pagar</label>
+          </p>
+          <p>
+            <label>Luz</label>
+            <input type="checkbox" name="servicios" value="luz">
+            <label>Internet</label>
+            <input type="checkbox" name="servicios" value="internet">
+            <label>CAE</label>
+            <input type="checkbox" name="servicios" value="cae">
+          </p>
+          <p>
+            <label>Comentarios:</label>
+            <textarea name="comentarios" cols="30" rows="10"></textarea>
           </p>
           <p>
             <input type="submit">
