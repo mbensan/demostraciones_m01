@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Completo</title>
+  <style>
+    #plato {
+      padding: 3rem;
+    }
+    #plato * {
+      margin: 0 auto;
+    }
+    .pan {
+      background-color: #DEB887;
+      min-height: 3.5rem;
+      width: 22rem
+    }
+    #salchicha {
+      background: radial-gradient(circle, rgba(250,149,71,1) 0%, rgba(213,130,28,1) 100%, rgba(252,176,69,1) 100%);
+      min-height: 3rem;
+      width: 30rem;
+      border-radius: 2rem;
+      position: relative;
+    }
+    #salchicha * {
+      display: inline-block;
+      position: relative;
+    }
+    #sup {
+      border-top-left-radius: 4rem;
+      border-top-right-radius: 4rem;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      border-bottom: 0.5rem solid brown;
+    }
+    #inf {
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+      border-bottom-left-radius: 4rem;
+      border-bottom-right-radius: 4rem;
+      border-top: 0.5rem solid brown;
+    }
+    .ketchup-top {
+      width: 4rem;
+      height: 2rem;
+      border-top: 0.7rem solid red;
+      border-radius: 2.5rem;
+      position: relative;
+      top: 0.1rem;
+    }
+    .ketchup-bottom {
+      width: 4rem;
+      height: 2rem;
+      border-bottom: 0.7rem solid red;
+      border-radius: 2.5rem;
+      position: relative;
+      bottom: 0.1rem;
+    }
+  </style>
+</head>
+<body>
+  <div id="plato">
+    <div class="pan" id="sup"></div>
+    <div id="salchicha">
+      <div class="ketchup-top"></div>
+      <div class="ketchup-bottom"></div>
+      <div class="ketchup-top"></div>
+      <div class="ketchup-bottom"></div>
+      <div class="ketchup-top"></div>
+      <div class="ketchup-bottom"></div>
+      <div class="ketchup-top"></div>
+    </div>
+    <div class="pan" id="inf"></div>
+  </div>
+</body>
+</html>
