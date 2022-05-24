@@ -19,6 +19,7 @@
       display: inline-block;
       padding: 2rem;
       vertical-align: top;
+      position: relative;
     }
     #menu {
       width: 200px;
@@ -34,36 +35,84 @@
       background-color: goldenrod;
     }
 
+    #menu:hover, #publicidad:hover {
+      background-color: greenyellow;
+    }
+
+    form input:focus, form select:focus {
+      background-color: yellow;
+    }
+    #nav {
+      display: inline-block;
+      margin: 0 auto;
+    }
+    .menu-item {
+      display: inline-block;
+      background-color: brown;
+      padding: 0.5rem 1rem;
+      border-radius: 1rem;
+    }
+    .menu-item > a {
+      color: antiquewhite;
+      font-weight: bold;
+      text-decoration: none;
+      letter-spacing: 5px;
+    }
+    .pub {
+      border: 2px solid black;
+      background-color: crimson;
+      min-height: 5rem;
+      text-align: center;
+      color: wheat;
+      font-weight: bold;
+    }
+
   </style>
 </head>
 <body>
   <!-- .T_ZXJj@bDs8#4# -->
   <div id="contenedor">
     <div class="caja">
-      Barra de navegación
+      <div id="nav">
+        <div class="menu-item">
+          <a href="#">Inicio</a>
+        </div>
+        <div class="menu-item">
+          <a href="#">Contacto</a>
+        </div>
+        <div class="menu-item">
+          <a href="#">Nosotros</a>
+        </div>
+        <div class="menu-item">
+          <a href="#">Servicios</a>
+        </div>
+      </div>
     </div>
     <div class="caja">
       <div class="columna" id="menu">
         Columna MENU
       </div>
       <div class="columna" id="main">
+        
+        <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/9LA57nrEwws" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></-->iframe>
+        
         <h3>Ingrese sus datos para pagar</h3>
-        <form method="GET">
+        <form class="label" method="POST" action="https://formspree.io/f/xrgjjbbo">
           <p>
             <label>Nombre:</label>
-            <input type="text" placeholder="Ingrese su nombre">
+            <input type="text" placeholder="Ingrese su nombre" name="nombre">
           </p>
           <p>
             <label>Contraseña:</label>
-            <input type="password" placeholder="Ingrese su contraseña">
+            <input type="password" placeholder="Ingrese su contraseña" name="password">
           </p>
           <p>
             <label>Correo:</label>
-            <input type="email" placeholder="Ingrese su Correo electrónico">
+            <input type="email" placeholder="Ingrese su Correo electrónico" name="correo">
           </p>
           <p>
             <label>Edad:</label>
-            <input type="number" placeholder="Ingrese su edad">
+            <input type="number" placeholder="Ingrese su edad" name="edad">
           </p>
           <p>
             <label>Método de pago</label>
@@ -115,7 +164,18 @@
         </form>
       </div>
       <div class="columna" id="publicidad">
-        Columna Publicidad
+        <div id="pub1" class="pub">
+          Transbank
+        </div>
+        <div id="pub2" class="pub">
+          Falabella
+        </div>
+        <div id="pub3" class="pub">
+          Sence
+        </div>
+        <div id="pub4" class="pub">
+          Doggies
+        </div>
       </div>
     </div>
   </div>
